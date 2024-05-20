@@ -3,7 +3,7 @@ const criarItem= async (nome, quant, preco)=> {
     nome, 
     quant,
     preco,
-    subTotal:()=> preco*quant,
+    subTotal:(preco,quant) => preco*quant,
   }
 }
 
